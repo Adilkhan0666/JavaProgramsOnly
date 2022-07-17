@@ -38,10 +38,15 @@ public class Employee {
 //        System.out.println();
 //        System.out.println("fetching all employee  ");
 //        System.out.println(employeeService.retrieveByStatusChangeNameFirstCharAToS());
-        System.out.println();
-        System.out.println();
-        System.out.println("fetching all employee  names ");
-        System.out.println(employeeService.retrieveAllEmployeeMakeStatusActiveToInactive());
+//        System.out.println();
+//        System.out.println();
+//        System.out.println("fetching all employee  names ");
+//        System.out.println(employeeService.retrieveAllEmployeeMakeStatusActiveToInactive());
+//
 
+        System.out.println();
+        System.out.println();
+        System.out.println("fetching employee salary less than 50,000 and giving bonus of 10,000");
+        System.out.println(employeeService.retrieveEmpSalaryLessFiftyTh());
     }
 }

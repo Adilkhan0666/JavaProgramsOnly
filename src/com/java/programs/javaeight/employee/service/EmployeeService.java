@@ -92,4 +92,15 @@ public class EmployeeService {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * fetching employee salary less than 50,000 and giving bonus of 10,000
+     * @return list of employee
+     */
+    public List<EmployeeDto> retrieveEmpSalaryLessFiftyTh(){
+        return employeeDtos.stream().filter(data -> data.getSalary()<50000).peek(salIncrement -> salIncrement.setSalary(salIncrement.getSalary()+10000))
+                .collect(Collectors.toList());
+
+    }
+
+
 }

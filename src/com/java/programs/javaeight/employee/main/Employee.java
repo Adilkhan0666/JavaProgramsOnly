@@ -7,7 +7,7 @@ public class Employee {
     public static void main(String[] args) {
         EmployeeService employeeService = new EmployeeService();
         System.out.println();
-        System.out.println("fetching all employee details");
+        System.out.println("fetching all employee details from TCS");
         employeeService.retrieveAllEmployee();
 
 //        System.out.println();
@@ -43,10 +43,21 @@ public class Employee {
 //        System.out.println("fetching all employee  names ");
 //        System.out.println(employeeService.retrieveAllEmployeeMakeStatusActiveToInactive());
 //
+//
+//        System.out.println();
+//        System.out.println();
+//        System.out.println("fetching employee salary less than 50,000 and giving bonus of 10,000");
+//        System.out.println(employeeService.retrieveEmpSalaryLessFiftyTh());
 
         System.out.println();
         System.out.println();
-        System.out.println("fetching employee salary less than 50,000 and giving bonus of 10,000");
-        System.out.println(employeeService.retrieveEmpSalaryLessFiftyTh());
+        System.out.println("fetching employee from deloitte");
+        employeeService.getDeloitteEmployeeList();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("fetching common employee ");
+        System.out.println(employeeService.getCommonEmployeeInTCSAndDeloitte1());;
+
     }
 }
